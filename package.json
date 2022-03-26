@@ -1,11 +1,16 @@
 {
   "name": "aero",
-  "private": true,
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "tsc && ts-node index.ts"
+  },
+  "dependencies": {},
+  "workspaces": [
+    "packages/*"
+  ],
   "devDependencies": {
     "lerna": "^4.0.0"
-  },
-  "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
   }
 }
